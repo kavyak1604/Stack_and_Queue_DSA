@@ -70,5 +70,6 @@ int main()
     q1.EnQueue(20);
     int v=q1.DeQueue();
     q1.Display();
-}
+}/*Output is:
+20
 
