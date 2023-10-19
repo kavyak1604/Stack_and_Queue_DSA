@@ -34,6 +34,8 @@ void Queue::EnQueue(int element)
         array[rear]=element;
     }
 }
+/*output is:
+20/*
 
 int Queue::DeQueue()
 {
