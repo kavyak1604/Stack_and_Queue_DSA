@@ -48,5 +48,29 @@ b. Push the values 10 and 20 onto the stack using the Push method.<br>
 c. Pop an element from the stack and store it in the variable v. If v is not ERROR, print its value.<br>
 d. Use the Peek method to get the element at the top of the stack and store it in the variable x. Print the value of x.<br>
 End<br>
-b)Queue
+b)Queue<br>
+Start<br>
+Define constants: ERROR with a value of -9999 to represent errors and MAXSIZE with a value of 10 as the maximum size of the queue.<br>
+Create a Queue class to implement the queue data structure.<br>
+a. Define private data members: front and rear to keep track of the front and rear of the queue, and array to store queue elements.<br>
+b. Create a constructor Queue to initialize the queue. Set front and rear to -1 to indicate an empty queue.<br>
+c. Implement the EnQueue method to add elements to the queue:<br>
+i. Check if the queue is full (i.e., rear is equal to MAXSIZE - 1). If so, display "Queue overflow" and return.
+ii. If the queue is not full, check if the queue is initially empty (i.e., front is -1). If true, set front to 0 to indicate the first element.<br>
+iii. Increment rear and add the new element to the array at the rear position.<br>
+d. Implement the DeQueue method to remove elements from the queue:<br>
+i. Check if the queue is empty (i.e., front is -1 or front is greater than or equal to rear + 1). If so, display "Queue is empty," return ERROR, and terminate.<br>
+ii. If the queue is not empty, retrieve the element at the front, increment front, and return the element.<br>
+e. Implement the Display method to print the elements of the queue:<br>
+i. Check if the queue is empty using the same condition as in the DeQueue method. If true, display "Queue is empty."<br>
+ii. Iterate through the elements of the queue starting from front and ending at rear, printing each element.<br>
+In the main function:<br>
+a. Create an instance of the Queue class called q1.<br>
+b. Enqueue the values 10 and 20 into the queue using the EnQueue method.<br>
+c. Dequeue an element from the queue and store it in the variable v.<br>
+d. Display the elements of the queue using the Display method.<br>
+End<br>
+
+## CONCLUSION
+Hence in this repository an insight of DSA in c++ was taken and programs using stack and queue were performed.
 
