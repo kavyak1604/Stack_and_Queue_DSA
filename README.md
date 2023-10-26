@@ -27,3 +27,26 @@ queue::push(g) 	Adds the element ‘g’ at the end of the queue.<br>
 queue::pop() 	Deletes the first element of the queue.<br>
 
 ## ALGORITHM
+a)Stack<br>
+Start<br>
+Define constants: ERROR with a value of -9999 to represent errors and MAXSIZE with a value of 10 as the maximum size of the stack.<br>
+Create a Stack class to implement the stack data structure.<br>
+a. Define private data members: top to keep track of the top of the stack, and array to store stack elements.<br>
+b. Create a constructor Stack to initialize the stack. Set top to -1 to indicate an empty stack.<br>
+c. Implement the Push method to add elements to the stack:<br>
+i. Check if the stack is full (i.e., top is equal to MAXSIZE - 1). If so, display "Stack overflow" and return.<br>
+ii. If the stack is not full, increment top and add the new element to the array.<br>
+d. Implement the Pop method to remove elements from the stack:<br>
+i. Check if the stack is empty (i.e., top is -1). If so, display "Stack is empty," return ERROR, and terminate.<br>
+ii. If the stack is not empty, retrieve the top element, decrement top, and return the element.<br>
+e. Implement the Peek method to get the element at the top of the stack:<br>
+i. Check if the stack is not empty (i.e., top is not -1). If true, return the element at the top of the stack.<br>
+ii. If the stack is empty, return ERROR.<br>
+In the main function:<br>
+a. Create an instance of the Stack class called s1.<br>
+b. Push the values 10 and 20 onto the stack using the Push method.<br>
+c. Pop an element from the stack and store it in the variable v. If v is not ERROR, print its value.<br>
+d. Use the Peek method to get the element at the top of the stack and store it in the variable x. Print the value of x.<br>
+End<br>
+b)Queue
+
